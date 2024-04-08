@@ -17,9 +17,9 @@ from pytgcalls.types.input_stream.quality import HighQualityAudio, MediumQuality
 from pytgcalls.types.stream import StreamAudioEnded
 
 import config
-from SHUKLAMUSIC import LOGGER, YouTube, app
-from SHUKLAMUSIC.misc import db
-from SHUKLAMUSIC.utils.database import (
+from PETERMUSIC import LOGGER, YouTube, app
+from PETERMUSIC.misc import db
+from PETERMUSIC.utils.database import (
     add_active_chat,
     add_active_video_chat,
     get_lang,
@@ -31,11 +31,11 @@ from SHUKLAMUSIC.utils.database import (
     remove_active_video_chat,
     set_loop,
 )
-from SHUKLAMUSIC.utils.exceptions import AssistantErr
-from SHUKLAMUSIC.utils.formatters import check_duration, seconds_to_min, speed_converter
-from SHUKLAMUSIC.utils.inline.play import stream_markup
-from SHUKLAMUSIC.utils.stream.autoclear import auto_clean
-from SHUKLAMUSIC.utils.thumbnails import get_thumb
+from PETERMUSIC.utils.exceptions import AssistantErr
+from PETERMUSIC.utils.formatters import check_duration, seconds_to_min, speed_converter
+from PETERMUSIC.utils.inline.play import stream_markup
+from PETERMUSIC.utils.stream.autoclear import auto_clean
+from PETERMUSIC.utils.thumbnails import get_thumb
 from strings import get_string
 
 autoend = {}
@@ -51,7 +51,7 @@ async def _clear_(chat_id):
 class Call(PyTgCalls):
     def __init__(self):
         self.userbot1 = Client(
-            name="SHUKLAAss1",
+            name="AMPARKER",
             api_id=config.API_ID,
             api_hash=config.API_HASH,
             session_string=str(config.STRING1),
@@ -61,7 +61,7 @@ class Call(PyTgCalls):
             cache_duration=100,
         )
         self.userbot2 = Client(
-            name="SHUKLAAss2",
+            name="BACK_B3NCHER",
             api_id=config.API_ID,
             api_hash=config.API_HASH,
             session_string=str(config.STRING2),
@@ -71,7 +71,7 @@ class Call(PyTgCalls):
             cache_duration=100,
         )
         self.userbot3 = Client(
-            name="SHUKLAXAss3",
+            name="AMPARKER",
             api_id=config.API_ID,
             api_hash=config.API_HASH,
             session_string=str(config.STRING3),
@@ -81,7 +81,7 @@ class Call(PyTgCalls):
             cache_duration=100,
         )
         self.userbot4 = Client(
-            name="SHUKLAXAss4",
+            name="BACK_B3NCHER",
             api_id=config.API_ID,
             api_hash=config.API_HASH,
             session_string=str(config.STRING4),
@@ -91,7 +91,7 @@ class Call(PyTgCalls):
             cache_duration=100,
         )
         self.userbot5 = Client(
-            name="SHUKLAAss5",
+            name="AMPARKER",
             api_id=config.API_ID,
             api_hash=config.API_HASH,
             session_string=str(config.STRING5),
